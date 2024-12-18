@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: A_hologram_glitch
+  m_Shader: {fileID: 4800000, guid: d6eea39d305f7284b90f72eee5c4c775, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlbedoTexture:
+        m_Texture: {fileID: 2800000, guid: 7a6115c8e9e6c574b88bd9e5b54c1c59, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTexture:
+        m_Texture: {fileID: 2800000, guid: 256faa780dc98124083f89c3c74b93a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _FlickingIntensity: 0.892
+    - _FlickingSpeed: 0.77
+    - _FresnelPower: 0.73
+    - _FresnelPower1: 1
+    - _FresnelPower2: 0.2
+    - _GlitchNoiseScale: 500
+    - _GlitchSpeed: -0.1
+    - _GlitchTilling: 3.44
+    - _GlitchVertexOffset: 5
+    - _GlitchViewVertexOffset: 3
+    - _ScanSpeed: 1
+    - _ScanSpeed_1: 1
+    - _ScanSpeed_Thick: -1.2
+    - _ScanSpeed_Thin: -30
+    - _ScanTilling: 1
+    - _ScanTilling_1: 1
+    - _ScanTilling_Thick: 1.5
+    - _ScanTilling_Thin: 200
+    m_Colors:
+    - _BaseColor: {r: 0.24959952, g: 0.47222126, b: 0.745283, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _FlickingSmoothStep: {r: 0.1, g: 0.6, b: 0, a: 0}
+    - _FresnelColor: {r: 2.4712036, g: 3.920471, b: 7.9999995, a: 1}
+    - _ScanColor: {r: 1.7924527, g: 3.4506361, b: 3.9999998, a: 1}
+  m_BuildTextureStacks: []
