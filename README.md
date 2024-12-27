@@ -11,7 +11,7 @@ description: hologram + flicking + procedural scanline(sin, frac) + vertex offse
 ## cartoon 卡通渲染
 ![cartoon_rendering](https://github.com/user-attachments/assets/6b389b4a-75a4-43a3-9db4-3cba1b1c0078)
 
-path: assets/cartoon
+path: assets/urp demo/cartoon
 
 ## radial blur 径向模糊
 ![tmp4318](https://github.com/user-attachments/assets/46738ef4-57d9-455e-a9d1-5cf58c99f21e)
