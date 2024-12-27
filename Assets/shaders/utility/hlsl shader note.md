@@ -19,13 +19,20 @@ clmap(x, min, max)
 
 # point
 ## sample
+^ texture sample
 TEXTURE2D(_BaseTex);
 SAMPLER(sampler_BaseTex);
 float4 baseColor = SAMPLE_TEXTURE2D(_BaseTex, sampler_BaseTex,
 i.uv);
 
+^ blit texture sample
+SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, input.texcoord);
+
 # misc
 Material的判空只能通过重载的!=, 不能使用is not null
+
+深度图: _CameraDepthTexture
+不透明物体的图: _CameraOpaqueTexture
 
 # hlsl template
 ## lit
