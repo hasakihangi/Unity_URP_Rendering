@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9066075519853271763
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: VolumetricLightVolume
+  m_EditorClassIdentifier: Assembly-CSharp::VolumetricLightVolume
+  active: 1
+  intensity:
+    m_OverrideState: 0
+    m_Value: 0
+  stepTimes:
+    m_OverrideState: 0
+    m_Value: 16
+  blurDownSample:
+    m_OverrideState: 0
+    m_Value: 1
+  blurExtraTimes:
+    m_OverrideState: 0
+    m_Value: 0
+  blurRange:
+    m_OverrideState: 0
+    m_Value: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,8 +41,8 @@ MonoBehaviour:
   m_Name: Global Volume Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 5422919663245028666}
   - {fileID: 703669783681070659}
+  - {fileID: -9066075519853271763}
 --- !u!114 &703669783681070659
 MonoBehaviour:
   m_ObjectHideFlags: 3

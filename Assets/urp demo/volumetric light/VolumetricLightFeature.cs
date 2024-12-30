@@ -122,11 +122,11 @@ public class VolumetricLightRenderPass : ScriptableRenderPass
 					.blurDownSample.value;
 				RenderingUtils.ReAllocateIfNeeded(ref rt2, rtd2);
 			}
+			
+			// 这里的清除倒是有用
+			ConfigureTarget(rt);
+			ConfigureClear(ClearFlag.Color, Color.black);
 		}
-		
-		// 这里的清除倒是有用
-		ConfigureTarget(rt);
-		ConfigureClear(ClearFlag.Color, Color.black);
 	}
 	
 	public override void Execute(ScriptableRenderContext context,
