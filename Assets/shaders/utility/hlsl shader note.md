@@ -34,6 +34,20 @@ Material的判空只能通过重载的!=, 不能使用is not null
 深度图: _CameraDepthTexture
 不透明物体的图: _CameraOpaqueTexture
 
+重建世界坐标
+```
+float2 uv = i.vertex.xy / _ScaledScreenParams.xy;
+
+#if UNITY_REVERSED_Z 
+    real depth = SampleSceneDepth(uv); 
+#else
+    real depth = lerp(UNITY_NEAR_CLIP_VALUE, 1, 
+    SampleSceneDepth(uv));
+#endif
+
+float3 worldPos = ComputeWorldSpacePosition(uv, depth, UNITY_MATRIX_I_VP); 
+```
+
 # hlsl template
 ## lit
 ```

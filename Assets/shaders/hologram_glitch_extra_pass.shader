@@ -1,4 +1,4 @@
-Shader "A/hologram_glitch_extra_pass"
+Shader "A/Hologram_glitch_extra_pass"
 {
     Properties
     {

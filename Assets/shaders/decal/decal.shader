@@ -66,15 +66,15 @@ Shader "A/DecalCube"
 
                  float3 objectPos = mul(UNITY_MATRIX_I_M, float4(worldPos, 1));
 
-                float3 baseColor = SAMPLE_TEXTURE2D(_DecalTex, 
+                float4 tex = SAMPLE_TEXTURE2D(_DecalTex, 
                 sampler_LinearClamp, objectPos.xy + 0.5);
 
                 float alpha = step(float3(-0.5,-0.5,-0.5), objectPos) - step
                 (float3(0.5,0.5,0.5), objectPos);
                 
                 float4 finalColor;
-                finalColor.rgb = baseColor;
-                finalColor.a = alpha;
+                finalColor.rgb = tex.rgb;
+                finalColor.a = alpha * tex.a;
                 return finalColor;
             }
             ENDHLSL

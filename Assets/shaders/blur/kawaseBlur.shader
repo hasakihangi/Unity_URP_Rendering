@@ -11,6 +11,7 @@ Shader "A/Kawase Blur"
 
     float4 KawaseBlurFrag(Varyings input) : SV_Target
     {
+        _BlurRange /= 1000;
         float3 tex = SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp, 
         input.texcoord).rgb;
         tex += SAMPLE_TEXTURE2D(_BlitTexture, sampler_LinearClamp,

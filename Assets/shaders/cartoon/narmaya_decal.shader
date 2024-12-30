@@ -1,4 +1,4 @@
-Shader "A/narmaya_decal"
+Shader "A/Narmaya_decal"
 {
     Properties
     {

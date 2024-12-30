@@ -1,4 +1,4 @@
-Shader "A_Cartoon/narmaya_cartoon"
+Shader "A_Cartoon/Narmaya_cartoon"
 {
     Properties
     {

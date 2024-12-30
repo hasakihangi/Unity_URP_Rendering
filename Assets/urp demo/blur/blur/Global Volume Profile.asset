@@ -78,17 +78,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RadialBlurVolume
   active: 1
   blurRange:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 2.22
   loopCount:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 7
   x:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0.5
   y:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 0.482
   downSample:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1

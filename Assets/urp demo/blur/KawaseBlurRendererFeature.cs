@@ -123,8 +123,8 @@ public class KawaseBlurRenderPass : ScriptableRenderPass
 			for (int i = 0; i < blurExtraTimes; i++)
 			{
 				currentBlurRange += blurRange;
-				material.SetFloat(_BlurRange, currentBlurRange);Blit(cmd,
-					rt1, rt2, material, 0);
+				material.SetFloat(_BlurRange, currentBlurRange);
+				Blit(cmd, rt1, rt2, material, 0);
 				// 交换rt1和rt2, 将rt2里面的结果传到rt1
 				(rt1, rt2) = (rt2, rt1);
 			}
